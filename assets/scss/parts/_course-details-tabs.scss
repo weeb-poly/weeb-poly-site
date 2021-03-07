@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Course Details Tabs
+--------------------------------------------------------------*/
+.cource-details-tabs {
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.cource-details-tabs .nav-tabs {
+  border: 0;
+}
+
+.cource-details-tabs .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: #37423b;
+  border-radius: 0;
+  border-right: 2px solid #e2e7e4;
+  font-weight: 600;
+  font-size: 15px;
+
+  &:hover {
+    color: $crimson;
+  }
+
+  &.active {
+    color: $crimson;
+    border-color: $crimson;
+  }
+}
+
+.cource-details-tabs .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.cource-details-tabs .details {
+  h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #37423b;
+  }
+
+  p {
+    color: #777777;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .cource-details-tabs .nav-link {
+    border: 0;
+    padding: 15px;
+
+    &.active {
+      color: #fff;
+      background: $crimson;
+    }
+  }
+}
