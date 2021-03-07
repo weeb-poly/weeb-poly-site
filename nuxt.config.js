@@ -24,18 +24,12 @@ export default {
 
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/swiper/swiper-bundle.min.css' }
     ],
-      
-    script: [
-      { src: 'https://unpkg.com/swiper/swiper-bundle.min.js', defer: true }
-    ],
-
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    { src: '~/assets/scss/bootstrap.scss', lang: 'sass'},
+    { src: '~/assets/scss/bootstrap.scss', lang: 'sass' },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -62,6 +56,12 @@ export default {
      'Raleway': true,
      'Poppins': true
     }
+  },
+
+  styleResources: {
+    scss: [
+      '~/assets/scss/_variables.scss',
+    ]
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
