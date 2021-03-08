@@ -1,4 +1,6 @@
 export default {
+  target: 'static',
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Weeb Poly',
@@ -22,19 +24,25 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'manifest', href: '/site.webmanifest' },
 
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' },
+    ],
+
+    script: [
+      { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js' }
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
+
   css: [
-    { src: '~/assets/scss/bootstrap.scss', lang: 'sass' },
+    // { src: '~/assets/scss/bootstrap.scss', lang: 'sass' },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src : '~/plugins/bootstrap.js', ssr : false }
+    // { src : '~/plugins/bootstrap.js', ssr : false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -66,5 +74,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true,
   }
 }

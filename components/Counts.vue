@@ -1,33 +1,29 @@
 <template>
-    <section id="counts" class="counts section-bg">
-      <div class="container">
-
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span class="purecounter">9001</span>
-            <p>Degenerates</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span class="purecounter">69</span>
-            <p>Courses</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span class="purecounter">42</span>
-            <p>Events</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span class="purecounter">5</span>
-            <p>Dictators</p>
-          </div>
-
+  <section id="counts" class="counts section-bg">
+    <div class="container">
+      <div class="row counters">
+        <div class="col-lg-3 col-6 text-center">
+          <span class="purecounter">9001</span>
+          <p>Degenerates</p>
         </div>
 
+        <div class="col-lg-3 col-6 text-center">
+          <span class="purecounter">69</span>
+          <p>Courses</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span class="purecounter">42</span>
+          <p>Events</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span class="purecounter">5</span>
+          <p>Dictators</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

@@ -93,6 +93,35 @@
     </section>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      courses: [
+        {
+          img: 'https://via.placeholder.com/800x533.jpg',
+          name: 'Website Design',
+          label: 'Web Development',
+          desc: "Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore."
+        },
+        {
+          img: 'https://via.placeholder.com/800x533.jpg',
+          name: 'Search Engine Optimization',
+          label: 'Marketing',
+          desc: "Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore."
+        },
+        {
+          img: 'https://via.placeholder.com/400x400.jpg',
+          name: 'Copywriting',
+          label: 'Content',
+          message: 'Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.'
+        }
+      ]
+    }
+  },
+}
+</script>
+
 <style lang="scss" scoped>
 @import '~/assets/scss/variables';
 @import '~/assets/scss/parts/general';

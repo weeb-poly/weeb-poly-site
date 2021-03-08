@@ -41,6 +41,7 @@
 
 .navbar a:hover,
 .navbar .active,
+.navbar .nuxt-link-active,
 .navbar li:hover > a {
   color: $crimson;
 }
@@ -178,6 +179,7 @@
 
   a:hover,
   .active,
+  .nuxt-link-active,
   li:hover > a {
     color: $crimson;
   }

@@ -1,15 +1,17 @@
 <template>
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative">
-      <h1>Why not change<br>za warudo?</h1>
-      <h2>We are team of talented degenerates making good use of our free time</h2>
-      <a href="#" class="btn-get-started">Join Us</a>
+      <h1 v-if="error.statusCode === 404">Page not found</h1>
+      <h1 v-else>An error occurred</h1>
+      <NuxtLink to="/" class="btn-get-started">Home Page</NuxtLink>
     </div>
   </section>
 </template>
 
 <script>
 export default {
+  props: ['error'],
+  layout: 'default'
 }
 </script>
 
