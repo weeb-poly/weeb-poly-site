@@ -6,7 +6,7 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <NuxtLink to="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
+      <nav ref="navbar" id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
@@ -34,37 +34,36 @@
 
           <li><NuxtLink to="/contact">Contact</NuxtLink></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <i ref="toggle" class="bi bi-list mobile-nav-toggle" v-on:click="toggle"></i>
+      </nav>
     </div>
   </header>
 </template>
 
 <script>
 export default {
-    mounted() {
-        /**
-         * Mobile nav toggle
-         */
-        document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
-            document.getElementById('navbar').classList.toggle('navbar-mobile');
-            this.classList.toggle('bi-list');
-            this.classList.toggle('bi-x');
-        });
-
-        /**
-         * Mobile nav dropdowns activate
-         */
-        let dropdownItems = document.querySelectorAll('.navbar .dropdown > a');
-        for (var i = 0; i < dropdownItems.length; i++) {
-            dropdownItems[i].addEventListener('click', function () {
-                if (document.getElementById('navbar').classList.contains('navbar-mobile')) {
-                    e.preventDefault();
-                    this.nextElementSibling.classList.toggle('dropdown-active');
-                }
-            });
-        }
+  methods: {
+    toggle: () => {
+      this.$refs.navbar.classList.toggle('navbar-mobile');
+      this.$refs.toggle.classList.toggle('bi-list');
+      this.$refs.toggle.classList.toggle('bi-x');
     }
+  },
+  mounted() {
+    /**
+     * Mobile nav dropdowns activate
+     */
+    let navbar = this.$refs.navbar;
+    let dropdownItems = navbar.querySelectorAll('.dropdown > a');
+    for (const items of dropdownItems) {
+      items.addEventListener('click', function(e) {
+        if (navbar.classList.contains('navbar-mobile')) {
+          e.preventDefault();
+          this.nextElementSibling.classList.toggle('dropdown-active');
+        }
+      });
+    }
+  }
 }
 </script>
 
