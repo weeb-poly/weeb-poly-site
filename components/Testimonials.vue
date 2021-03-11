@@ -25,6 +25,7 @@
           </div>
 
         </div>
+
         <div ref="pagination" class="swiper-pagination"></div>
       </div>
     </div>
@@ -87,7 +88,6 @@ export default {
         }
       }
     });
-    console.log(swiper.pagination.bullets);
   }
 }
 </script>
