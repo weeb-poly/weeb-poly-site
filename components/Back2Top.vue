@@ -11,11 +11,14 @@ export default {
     }
   },
   mounted() {
-    const _toggleBacktotop = () => {
-      this.focusInput();
-    }
-    window.addEventListener('load', _toggleBacktotop);
-    document.addEventListener('scroll', _toggleBacktotop);
+    setTimeout(() => {
+      window.addEventListener('load', this.toggleBacktotop);
+      document.addEventListener('scroll', this.toggleBacktotop);
+    });
+  },
+  beforeDestroy() {
+    window.removeEventListener('load', this.toggleBacktotop);
+    document.removeEventListener('scroll', this.toggleBacktotop);
   }
 }
 </script>
