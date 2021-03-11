@@ -6,7 +6,7 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <NuxtLink to="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav ref="navbar" id="navbar" class="navbar order-last order-lg-0">
+      <nav ref="navbar" id="navbar" class="navbar order-last order-lg-0" :class="{ 'navbar-mobile': mobile_nav }" >
         <ul>
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
@@ -34,7 +34,7 @@
 
           <li><NuxtLink to="/contact">Contact</NuxtLink></li>
         </ul>
-        <i ref="mob_nav_tog" class="bi bi-list mobile-nav-toggle" v-on:click="mobile_nav_toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle" :class="{ 'bi-list bi-x': mobile_nav }" v-on:click="mobile_nav_toggle"></i>
       </nav>
     </div>
   </header>
@@ -42,14 +42,17 @@
 
 <script>
 export default {
+  data() {
+    return {
+      mobile_nav: false
+    };
+  },
   methods: {
     mobile_nav_toggle() {
-      this.$refs.navbar.classList.toggle('navbar-mobile');
-      this.$refs.mob_nav_tog.classList.toggle('bi-list');
-      this.$refs.mob_nav_tog.classList.toggle('bi-x');
+      this.mobile_nav = !this.mobile_nav;
     },
     dropdown_toggle(e) {
-      if (this.$refs.navbar.classList.contains('navbar-mobile')) {
+      if (this.mobile_nav) {
         e.preventDefault();
         e.target.nextElementSibling.classList.toggle('dropdown-active');
       }
