@@ -22,19 +22,6 @@
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
@@ -66,20 +53,14 @@
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="github"><i class='bx bxl-github'></i></a>
-        <a href="#" class="discord"><i class='bx bxl-discord'></i></a>
+        <a href="https://github.com/weeb-poly/" class="github"><i class='bx bxl-github'></i></a>
+        <a href="https://discord.com/" class="discord"><i class='bx bxl-discord'></i></a>
       </div>
     </div>
   </footer>
 </template>
 
-<script>
-export default {
-}
-</script>
-
 <style lang="scss" scoped>
 @import '~/assets/scss/variables';
-@import '~/assets/scss/parts/general';
 @import '~/assets/scss/parts/footer';
 </style>

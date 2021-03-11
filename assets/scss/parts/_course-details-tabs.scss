@@ -1,6 +1,5 @@
-/*--------------------------------------------------------------
-# Course Details Tabs
---------------------------------------------------------------*/
+// Course Details Tabs
+
 .cource-details-tabs {
   overflow: hidden;
   padding-top: 0;
@@ -21,17 +20,26 @@
   font-size: 15px;
 
   &:hover {
-    color: $crimson;
+    color: $primary;
   }
 
   &.active {
-    color: $crimson;
-    border-color: $crimson;
+    color: $primary;
+    border-color: $primary;
+
+    @media (max-width: 992px) {
+      color: #fff;
+      background: $primary;
+    }
+  }
+
+  @media (max-width: 992px) {
+    border: 0;
+    padding: 15px;
   }
 }
 
 .cource-details-tabs .tab-pane.active {
-  -webkit-animation: fadeIn 0.5s ease-out;
   animation: fadeIn 0.5s ease-out;
 }
 
@@ -44,7 +52,7 @@
   }
 
   p {
-    color: #777777;
+    color: #777;
 
     &:last-child {
       margin-bottom: 0;
@@ -52,14 +60,3 @@
   }
 }
 
-@media (max-width: 992px) {
-  .cource-details-tabs .nav-link {
-    border: 0;
-    padding: 15px;
-
-    &.active {
-      color: #fff;
-      background: $crimson;
-    }
-  }
-}

@@ -8,14 +8,7 @@
   </section>
 </template>
 
-<script>
-export default {
-}
-</script>
-
 <style lang="scss" scoped>
 @import '~/assets/scss/variables';
-@import '~/assets/scss/parts/general';
-@import '~/assets/scss/parts/sections';
 @import '~/assets/scss/parts/hero';
 </style>

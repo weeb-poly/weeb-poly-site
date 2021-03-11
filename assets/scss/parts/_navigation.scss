@@ -1,49 +1,47 @@
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+// Navigation Menu
+
+// Desktop Navigation
+
 .navbar {
   padding: 0;
-}
 
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-
-.navbar li {
-  position: relative;
-}
-
-.navbar a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 20px;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: #37423b;
-  white-space: nowrap;
-  transition: 0.3s;
-
-  i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
   }
-}
 
-.navbar a:hover,
-.navbar .active,
-.navbar .nuxt-link-active,
-.navbar li:hover > a {
-  color: $crimson;
+  li {
+    position: relative;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: lighten($body-color, 30%);
+    white-space: nowrap;
+    transition: 0.3s;
+
+    i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+    }
+  }
+
+  a:hover,
+  .active,
+  .nuxt-link-active,
+  li:hover > a {
+    color: $crimson;
+  }
 }
 
 /*
@@ -114,11 +112,11 @@
 }
 */
 
-/**
-* Mobile Navigation 
-*/
+
+// Mobile Navigation
+
 .mobile-nav-toggle {
-  color: #37423b;
+  color: $body-color;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -166,7 +164,7 @@
     left: 15px;
     padding: 10px 0;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: $body-bg;
     overflow-y: auto;
     transition: 0.3s;
   }
@@ -174,7 +172,7 @@
   a {
     padding: 10px 20px;
     font-size: 15px;
-    color: #37423b;
+    color: lighten($body-color, 30%);
   }
 
   a:hover,
@@ -205,10 +203,10 @@
     li {
       min-width: 200px;
     }
-    
+
     a {
       padding: 10px 20px;
-    
+
       i {
         font-size: 12px;
       }

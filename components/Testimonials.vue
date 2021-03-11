@@ -92,11 +92,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~/assets/scss/parts/general';
-@import '~/assets/scss/parts/sections';
-</style>
-
 <style lang="scss">
 @import "swiper/swiper-bundle.css";
 @import '~/assets/scss/parts/testimonials';

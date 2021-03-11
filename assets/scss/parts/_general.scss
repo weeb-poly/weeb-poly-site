@@ -1,17 +1,17 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+// General
+
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444;
+  color: $body-color;
+  background-color: $body-bg;
 }
 
 a {
-  color: $crimson;
+  color: $primary;
   text-decoration: none;
 
   &:hover {
-    color: lighten($crimson, 10%);
+    color: lighten($primary, 10%);
     text-decoration: none;
   }
 }

@@ -1,19 +1,17 @@
 <template>
-<div>
-  <Hero></Hero>
+  <div>
+    <Hero></Hero>
 
-  <main id="main">
-    <About></About>
-    <Counts></Counts>
-    <WhyUs></WhyUs>
+    <main id="main">
+      <About></About>
+      <Counts></Counts>
+      <WhyUs></WhyUs>
 
-    <!--<Features></Features>-->
+      <PopularCourses></PopularCourses>
 
-    <PopularCourses></PopularCourses>
-
-    <Testimonials></Testimonials>
-  </main>
-</div>
+      <Testimonials></Testimonials>
+    </main>
+  </div>
 </template>
 
 <script>
@@ -28,6 +26,3 @@ export default {
   components: { Hero, About, Counts, WhyUs, PopularCourses, Testimonials },
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

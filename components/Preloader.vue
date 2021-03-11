@@ -6,15 +6,17 @@
 
 <script>
   export default {
-    data: () => ({
-      loading: false
-    }),
+    data() {
+      return {
+        loading: false
+      };
+    },
     methods: {
       start() {
-        this.loading = true
+        this.loading = true;
       },
       finish() {
-        this.loading = false
+        this.loading = false;
       }
     }
   }

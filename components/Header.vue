@@ -34,7 +34,7 @@
 
           <li><NuxtLink to="/contact">Contact</NuxtLink></li>
         </ul>
-        <i ref="toggle" class="bi bi-list mobile-nav-toggle" v-on:click="toggle"></i>
+        <i ref="mob_nav_tog" class="bi bi-list mobile-nav-toggle" v-on:click="mobile_nav_toggle"></i>
       </nav>
     </div>
   </header>
@@ -43,25 +43,29 @@
 <script>
 export default {
   methods: {
-    toggle: () => {
+    mobile_nav_toggle() {
       this.$refs.navbar.classList.toggle('navbar-mobile');
-      this.$refs.toggle.classList.toggle('bi-list');
-      this.$refs.toggle.classList.toggle('bi-x');
+      this.$refs.mob_nav_tog.classList.toggle('bi-list');
+      this.$refs.mob_nav_tog.classList.toggle('bi-x');
+    },
+    dropdown_toggle(e) {
+      if (this.$refs.navbar.classList.contains('navbar-mobile')) {
+        e.preventDefault();
+        e.target.nextElementSibling.classList.toggle('dropdown-active');
+      }
     }
   },
   mounted() {
-    /**
-     * Mobile nav dropdowns activate
-     */
-    let navbar = this.$refs.navbar;
-    let dropdownItems = navbar.querySelectorAll('.dropdown > a');
+    // Mobile nav dropdowns activate
+    let dropdownItems = this.$refs.navbar.querySelectorAll('.dropdown > a');
     for (const items of dropdownItems) {
-      items.addEventListener('click', function(e) {
-        if (navbar.classList.contains('navbar-mobile')) {
-          e.preventDefault();
-          this.nextElementSibling.classList.toggle('dropdown-active');
-        }
-      });
+      items.addEventListener('click', this.dropdown_toggle);
+    }
+  },
+  beforeDestroy() {
+    let dropdownItems = this.$refs.navbar.querySelectorAll('.dropdown > a');
+    for (const items of dropdownItems) {
+      items.removeEventListener('click', this.dropdown_toggle);
     }
   }
 }
@@ -69,7 +73,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/scss/variables';
-@import '~/assets/scss/parts/general';
 @import '~/assets/scss/parts/header';
 @import '~/assets/scss/parts/navigation';
 </style>

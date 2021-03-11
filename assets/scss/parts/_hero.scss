@@ -1,6 +1,5 @@
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+// Hero Section
+
 #hero {
   width: 100%;
   height: 80vh;
@@ -10,7 +9,7 @@
 
   &:before {
     content: "";
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(#000, 0.4);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -20,7 +19,7 @@
 
   .container {
     padding-top: 72px;
-  
+
     @media (max-width: 992px) {
       padding-top: 62px;
     }
@@ -39,7 +38,7 @@
       line-height: 36px;
     }
   }
-  
+
   h2 {
     color: #eee;
     margin: 10px 0 0 0;
@@ -63,7 +62,7 @@
     margin-top: 30px;
     border: 2px solid #fff;
     color: #fff;
-  
+
     &:hover {
       background: $crimson;
       border: 2px solid $crimson;

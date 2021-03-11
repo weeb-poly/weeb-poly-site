@@ -1,30 +1,33 @@
 <template>
-  <a href="#" ref="back2top" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" v-show="visible" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      visible: false
+    }
+  },
   methods: {
-    toggleBacktotop() {
-      let b = this.$refs.back2top;
-      b.classList.toggle('active', (window.scrollY > 100));
+    scrollListener() {
+      this.visible = (window.scrollY > 100);
     }
   },
   mounted() {
     setTimeout(() => {
-      window.addEventListener('load', this.toggleBacktotop);
-      document.addEventListener('scroll', this.toggleBacktotop);
+      window.addEventListener('load', this.scrollListener);
     });
+    document.addEventListener('scroll', this.scrollListener);
   },
   beforeDestroy() {
-    window.removeEventListener('load', this.toggleBacktotop);
-    document.removeEventListener('scroll', this.toggleBacktotop);
+    window.removeEventListener('load', this.scrollListener);
+    document.removeEventListener('scroll', this.scrollListener);
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/scss/variables';
-@import '~/assets/scss/parts/general';
 @import '~/assets/scss/parts/back-to-top';
 </style>
