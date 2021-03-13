@@ -36,39 +36,13 @@
 import Swiper from 'swiper/bundle';
 
 export default {
-  data() {
-    return {
-      testimonials: [
-        {
-          img: 'https://via.placeholder.com/400x400.jpg',
-          name: 'Haysaca A. Smithee',
-          title: 'Maid',
-          message: "I'm, like, not super happy about this."
-        },
-        {
-          img: 'https://via.placeholder.com/400x400.jpg',
-          name: 'Chorogon',
-          title: 'Dragon',
-          message: 'This is so sad. Despacito, play Wonder Egg Priority.'
-        },
-        {
-          img: 'https://via.placeholder.com/400x400.jpg',
-          name: 'Bradley',
-          title: 'British Person',
-          message: 'I did nothing horny!'
-        },
-        {
-          img: 'https://via.placeholder.com/400x400.jpg',
-          name: 'Tim',
-          title: 'American Person',
-          message: 'Just keep ducking and I wont chop off your head.'
-        },
-      ]
+  computed: {
+    testimonials() {
+      return this.$store.state.quotes.list;
     }
   },
-
   mounted() {
-    let swiper = new Swiper(this.$refs.slider, {
+    let _swiper = new Swiper(this.$refs.slider, {
       speed: 600,
       loop: true,
       slidesPerView: 'auto',

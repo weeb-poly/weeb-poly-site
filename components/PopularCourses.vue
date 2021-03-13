@@ -42,30 +42,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      courses: [
-        {
-          img: 'https://via.placeholder.com/800x533.jpg',
-          name: 'Website Design',
-          label: 'Web Development',
-          desc: "Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore."
-        },
-        {
-          img: 'https://via.placeholder.com/800x533.jpg',
-          name: 'Search Engine Optimization',
-          label: 'Marketing',
-          desc: "Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore."
-        },
-        {
-          img: 'https://via.placeholder.com/800x533.jpg',
-          name: 'Copywriting',
-          label: 'Content',
-          desc: 'Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.'
-        }
-      ]
-    }
-  },
+  data: () => ({ courses: [] }),
+  async fetch() {
+    this.courses = await this.$content('courses').fetch().then(resp => resp.list);
+  }
 }
 </script>
 

@@ -59,8 +59,19 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/content',
     '@nuxtjs/style-resources'
   ],
+
+  hooks: {
+    'content:file:beforeInsert': async (document, database) => {
+      if (document.extension === '.json' && document.body) {
+        console.log(document);
+        const data = await database.markdown.toJSON(document.body);
+        Object.assign(document, data);
+      }
+    }
+  },
 
   googleFonts: {
     families: {
