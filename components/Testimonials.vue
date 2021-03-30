@@ -36,10 +36,9 @@
 import Swiper from 'swiper/bundle';
 
 export default {
-  computed: {
-    testimonials() {
-      return this.$store.state.quotes.list;
-    }
+  data: () => ({ testimonials: [] }),
+  async fetch() {
+    this.testimonials = await this.$content('quotes').fetch().then(resp => resp.list);
   },
   mounted() {
     let _swiper = new Swiper(this.$refs.slider, {
