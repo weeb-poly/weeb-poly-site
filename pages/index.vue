@@ -1,17 +1,14 @@
 <template>
-  <div>
+  <main>
     <Hero></Hero>
+    <About></About>
+    <Counts></Counts>
+    <WhyUs></WhyUs>
 
-    <main id="main">
-      <About></About>
-      <Counts></Counts>
-      <WhyUs></WhyUs>
+    <PopularCourses></PopularCourses>
 
-      <PopularCourses></PopularCourses>
-
-      <Testimonials></Testimonials>
-    </main>
-  </div>
+    <Testimonials></Testimonials>
+  </main>
 </template>
 
 <script>

@@ -1,9 +1,9 @@
 <template>
-  <main id="main">
+  <main>
     <div class="breadcrumbs">
       <div class="container">
-        <h2>Calendar</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        <h2>Events</h2>
+        <p>This is our calendar. We try to keep it up to date with all of our running events.</p>
       </div>
     </div>
 

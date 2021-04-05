@@ -44,15 +44,10 @@ section {
 }
 
 .breadcrumbs {
-  margin-top: 73px;
   text-align: center;
   background: $crimson;
   padding: 30px 0;
   color: #fff;
-
-  @media (max-width: 992px) {
-    margin-top: 63px;
-  }
 
   h2 {
     font-size: 32px;

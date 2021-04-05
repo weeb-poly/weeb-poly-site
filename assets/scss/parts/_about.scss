@@ -21,24 +21,19 @@
     }
   }
 
-  .learn-more-btn {
+  .btn-learn-more {
     background: $primary;
     color: #fff;
     border-radius: 50px;
     padding: 8px 25px 9px 25px;
     white-space: nowrap;
     transition: 0.3s;
-    font-size: 14px;
-    display: inline-block;
+    //font-size: 14px;
+    //display: inline-block;
 
     &:hover {
       background: lighten($primary, 10%);
       color: #fff;
-    }
-
-    @media (max-width: 768px) {
-      margin: 0 48px 0 0;
-      padding: 6px 18px;
     }
   }
 }
