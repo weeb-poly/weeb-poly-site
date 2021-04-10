@@ -16,16 +16,16 @@
             </p>
           </div>
 
-          <!--
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul class="ps-0 d-grid gap-3">
-              <li class="d-flex align-items-center"><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <h4 class="mb-0">Useful Links</h4>
+            <ul class="ps-0 d-grid gap-1">
+              <li class="d-flex align-items-center"><NuxtLink to="/">Home</NuxtLink></li>
+              <li class="d-flex align-items-center"><NuxtLink to="/about">About</NuxtLink></li>
+              <li class="d-flex align-items-center"><NuxtLink to="/events">Events</NuxtLink></li>
+              <li class="d-flex align-items-center"><NuxtLink to="/mascots">Mascots</NuxtLink></li>
             </ul>
           </div>
-          -->
+
         </div>
       </div>
     </div>

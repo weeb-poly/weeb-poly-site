@@ -7,15 +7,17 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row my-1 row-cols-1 row-cols-md-3 g-4 justify-content-md-center" v-for="item in data" :key="item.dir">
+    <section id="mascot-list" class="py-3">
+      <div class="container">
+        <div class="row my-1 row-cols-1 row-cols-md-3 g-4 justify-content-md-center" v-for="item in data" :key="item.dir">
 
-        <div class="col">
-          <InfoCard :data="item" :showProps="false" :showLink="true" class="mb-3"></InfoCard>
+          <div class="col">
+            <InfoCard :data="item" :showProps="false" :showLink="true" class="mb-3"></InfoCard>
+          </div>
+
         </div>
-
       </div>
-    </div>
+    </section>
 
   </main>
 </template>

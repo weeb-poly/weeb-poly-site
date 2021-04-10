@@ -1,5 +1,5 @@
 <template>
-  <section id="counts" class="counts section-bg">
+  <section id="counts" class="counts section-bg py-3">
     <div class="container">
       <div class="row counters">
         <div class="col-lg-3 col-6 text-center">

@@ -1,5 +1,5 @@
 <template>
-  <section id="features" class="features">
+  <section id="features" class="features py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-4">

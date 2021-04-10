@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <section class="container">
       <div class="row my-1 row-cols-1 row-cols-md-3 g-4 justify-content-md-center">
 
         <div class="col">
@@ -96,6 +96,6 @@
         </div>
 
       </div>
-    </div>
+    </section>
   </main>
 </template>

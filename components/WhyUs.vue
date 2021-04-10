@@ -1,5 +1,5 @@
 <template>
-  <section id="why-us" class="why-us">
+  <section id="why-us" class="why-us py-4">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 d-flex align-items-stretch">
