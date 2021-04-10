@@ -1,6 +1,6 @@
 ---
 title: Shion
-cover: https://via.placeholder.com/225x200
+cover: "contest/shion.png"
 info:
   - key: "Full Name"
     value: "Shion (初音) Iris Smithee"

@@ -1,6 +1,6 @@
 <template>
-  <main class="mt-4">
-    <div class="container">
+  <main class="my-4">
+    <section id="mascot-info" class="container">
       <div class="clearfix">
         <div class="col-md-3 float-md-end mb-3 ms-md-4">
           <InfoCard :data="data"></InfoCard>
@@ -10,21 +10,21 @@
           <nuxt-content :document="data" />
         </div>
       </div>
+    </section>
 
-      <div class="container" v-if="data.media">
-        <div class="row">
-          <h4>Gallery</h4>
-        </div>
-        <div class="row my-1 row-cols-1 row-cols-md-3 g-3 justify-content-md-center">
-          <div class="col" v-for="item in data.media" :key="item.src">
-            <figure class="figure">
-              <img :src="item.src" class="figure-img img-fluid rounded">
-              <figcaption class="figure-caption" v-html="item.caption"></figcaption>
-            </figure>
-          </div>
+    <section class="container" v-if="data.media">
+      <div class="row">
+        <h4>Gallery</h4>
+      </div>
+      <div class="row my-1 row-cols-1 row-cols-md-3 g-3 justify-content-md-center">
+        <div class="col" v-for="item in data.media" :key="item.src">
+          <figure class="figure">
+            <img :src="dynamicImg(item.src)" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption" v-html="item.caption"></figcaption>
+          </figure>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 </template>
 
@@ -45,11 +45,24 @@ table.card-body {
 </style>
 
 <script>
-  export default {
-    async asyncData({ $content, params }) {
-      const data = await $content('mascots', params.slug).fetch();
+export default {
+  async asyncData({ $content, params }) {
+    const data = await $content('mascots', params.slug).fetch();
 
-      return { data };
+    return { data };
+  },
+  methods: {
+    dynamicImg(url) {
+      if (!url) {
+        return
+      }
+      
+      if (url.includes('://')) {
+        return url;
+      } else {
+        return require(`~/assets/img/${url}`);
+      }
     }
   }
+};
 </script>

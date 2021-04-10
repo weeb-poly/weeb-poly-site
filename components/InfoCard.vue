@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <h5 class="card-header">{{ data.title }}</h5>
-    <img class="card-img-top" :src="data.cover">
+    <img class="card-img-top" :src="dynamicImg(data.cover)">
     <div class="card-body m-2 p-0">
       <table v-if="showProps" class="table card-text fs-7">
         <tbody>
@@ -51,6 +51,19 @@ export default {
     showLink: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    dynamicImg(url) {
+      if (!url) {
+        return
+      }
+      
+      if (url.includes('://')) {
+        return url;
+      } else {
+        return require(`~/assets/img/${url}`);
+      }
     }
   }
 };
