@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/archive/2021/mascot_concept_contest", {data:[{}],fetch:{},mutations:[]});
