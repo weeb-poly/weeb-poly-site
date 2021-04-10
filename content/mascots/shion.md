@@ -1,6 +1,32 @@
 ---
 title: Shion
-profile_img: https://via.placeholder.com/225x200
+cover: https://via.placeholder.com/225x200
+info:
+  - key: "Full Name"
+    value: "Shion (初音) Iris Smithee"
+  - key: "Gender"
+    value: "<i>Left as an exercise to the reader</i>"
+  - key: "Age"
+    value: "Unknown (appears to be in 20’s)"
+  - key: "Nationality"
+    value: "American, Japanese"
+  - key: "Blood Type"
+    value: "O"
+  - key: "Hair Color"
+    value: "Silver"
+  - key: "Eye Color"
+    value: "Crimson"
+  - key: "Height"
+    value: "5'1\""
+  - key: "Weight"
+    value: "45 kg"
+  - key: "Sizes"
+    value: "B79/W57/H73"
+  - key: "Creator"
+    value: "Cy (Bells)"
+media:
+  - src: "https://via.placeholder.com/414x225"
+    caption: "A caption"
 ---
 
 #### Biography
