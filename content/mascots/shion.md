@@ -1,6 +1,6 @@
 ---
 title: Shion
-cover: "contest/shion.png"
+cover: "mascots/shion/server_icon.png"
 info:
   - key: "Full Name"
     value: "Shion (初音) Iris Smithee"
@@ -25,17 +25,27 @@ info:
   - key: "Creator"
     value: "Cy (Bells)"
 media:
-  - src: "https://via.placeholder.com/414x225"
-    caption: "A caption"
+  - src: "mascots/shion/server_icon.png"
+    title: "Current Server Icon"
+    text: "May be replaced as part of the new competition"
+  - src: "mascots/shion/picrew_407340.png"
+    title: "Initial Design (Picrew)"
+    text: "Made using Picrew #407340"
+  - src: "mascots/shion/final_alpha.png"
+    title: "Contest Design (Transparent)"
+  - src: "mascots/shion/final_gradient.png"
+    title: "Contest Design (Gradient)"
 ---
 
 #### Biography
 
 Shion is a grad student at RPI/WPI. As a CSE major, they don’t really need the lab coat, but they wear one anyway.
 
-The registrar says that she graduated back in the 1970's, but they also have them marked as an incoming freshman so what do they know.
+The registrar says that they graduated back in the 1970's, but they also have them marked as an incoming freshman so what do they know.
 
-#### Notes
+#### Ideas
+
+Since the Mascots are still Work In Progress characters, we're still flushing them out.
 
 Personality: cynical, kind, kuudere, sarcastic, stoic
 
@@ -46,3 +56,7 @@ Mecha Fan (Will Rewatch Pacific Rim with you)
 SIS-MAN mascot was based on one of their incomplete projects (something about flexing on tall people)
     
 Occasionally tries to make jokes and references (El Psy Kongroo) to be "hip" with the "youngins" and cover it up when it inevitably fails
+
+#### Notes
+
+The Contest Design was a photobash of the original Picrew design as well another piece of art. The server icon is a headshot of the Contest Design as to not infringe on the original artist's work. We intend to have a fully original drawing of the character as part of the new mascot competition.
