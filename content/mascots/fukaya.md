@@ -21,8 +21,8 @@ info:
   - key: "Creator"
     value: "Bowserinator"
 media:
-  - src: "https://via.placeholder.com/225x225"
-    title: "TMP"
+  - src: "mascots/fukaya/contest.png"
+    title: "Contest Design"
 ---
 
 #### Biography
