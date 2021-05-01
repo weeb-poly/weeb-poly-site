@@ -3,19 +3,21 @@ title: Fukaya
 cover: "mascots/fukaya/cover.png"
 info:
   - key: "Full Name"
-    value: "<i>Unknown</i>"
+    value: "Fukaya Kaminari"
   - key: "Gender"
-    value: "<i>Unknown</i>"
+    value: "Female"
+  - key: "Birthday"
+    value: "Oct 14"
   - key: "Age"
-    value: "<i>Unknown</i>"
+    value: "21"
   - key: "Nationality"
-    value: "<i>Unknown</i>"
+    value: "Japanese"
   - key: "Hair Color"
-    value: "<i>Unknown</i>"
+    value: "Rose Taupe"
   - key: "Eye Color"
-    value: "<i>Unknown</i>"
+    value: "English Red"
   - key: "Height"
-    value: "<i>Unknown</i>"
+    value: "160 cm"
   - key: "Weight"
     value: "<i>Unknown</i>"
   - key: "Creator"
@@ -25,6 +27,26 @@ media:
     title: "Contest Design"
 ---
 
-#### Biography
+#### Personality
 
-*Unknown*
+Moved from Japan and is a CS Major at RPI. A bit shy, but would be happy to talk to you about computers. Organized. Knowledgeable about weeb stuff.
+
+#### Likes
+
+- Loose clothing
+- Mythology
+- Slice of life
+- Tea
+- Video games
+
+#### Dislikes
+
+- Wearing hats
+- Being mistaken for a neko
+
+#### Notes
+
+Hair is asymmetrical, the right side has more hair held with clips and a ribbon on the top. Left side has a smaller bit of hair hanging to the front (idk what to call it)
+
+Skirt is one of those skirts made of folded conical segments (pleated skirts?). Features flower pattern on the right side
+Hair is desaturated brown

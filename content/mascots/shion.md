@@ -6,6 +6,8 @@ info:
     value: "Shion (初音) Iris Smithee"
   - key: "Gender"
     value: "<i>Left as an exercise to the reader</i>"
+  - key: "Birthday"
+    value: "Oct 19"
   - key: "Age"
     value: "Unknown (appears to be in 20’s)"
   - key: "Nationality"

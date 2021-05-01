@@ -6,6 +6,8 @@ info:
     value: "<i>Unknown</i>"
   - key: "Gender"
     value: "<i>Unknown</i>"
+  - key: "Birthday"
+    value: "<i>Unknown</i>"
   - key: "Age"
     value: "<i>Unknown</i>"
   - key: "Nationality"
