@@ -72,7 +72,7 @@ export default {
           {
             hid: 'og:description',
             property: 'og:description',
-            content: 'One of the Weeb Poly Mascots'
+            content: this.data.description
           },
           {
             hid: 'og:site_name',
@@ -94,7 +94,7 @@ export default {
       if (!url) {
         return
       }
-      
+
       if (url.includes('://')) {
         return url;
       } else {

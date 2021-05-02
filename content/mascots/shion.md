@@ -39,9 +39,9 @@ media:
     title: "Contest Design (Gradient)"
 ---
 
-#### Biography
-
 Shion is a grad student at RPI/WPI. As a CSE major, they don’t really need the lab coat, but they wear one anyway.
+
+<!--more-->
 
 The registrar says that they graduated back in the 1970's, but they also have them marked as an incoming freshman so what do they know.
 

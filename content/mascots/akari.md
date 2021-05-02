@@ -31,6 +31,6 @@ media:
     title: "Contest Design #2"
 ---
 
-#### Biography
-
 *Unknown*
+
+<!--more-->

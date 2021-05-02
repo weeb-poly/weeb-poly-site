@@ -27,9 +27,9 @@ media:
     title: "Contest Design"
 ---
 
-#### Personality
+Fukaya is a CS major at RPI who's originally from Japan. A bit shy, but would be happy to talk to you about computers. Organized. Knowledgeable about weeb stuff.
 
-Moved from Japan and is a CS Major at RPI. A bit shy, but would be happy to talk to you about computers. Organized. Knowledgeable about weeb stuff.
+<!--more-->
 
 #### Likes
 

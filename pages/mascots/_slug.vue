@@ -7,6 +7,8 @@
         </div>
 
         <div class="container">
+          <h2>{{ data.title }}</h2>
+
           <nuxt-content :document="data" />
         </div>
       </div>
@@ -83,12 +85,13 @@ export default {
 
     return { data };
   },
+
   methods: {
     dynamicImg(url) {
       if (!url) {
         return
       }
-      
+
       if (url.includes('://')) {
         return url;
       } else {
