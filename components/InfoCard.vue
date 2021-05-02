@@ -3,7 +3,7 @@
     <h5 class="card-header">{{ data.title }}</h5>
     <img class="card-img-top" :src="cover">
     <div class="card-body m-2 p-0">
-      <table v-if="showProps" class="table card-text fs-7">
+      <table v-if="!preview" class="table card-text fs-7">
         <tbody>
           <tr v-for="item in data.info" :key="item.key">
             <th scope="row">{{ item.key }}</th>
@@ -12,7 +12,7 @@
         </tbody>
       </table>
 
-      <NuxtLink v-if="showLink" class="btn btn-primary" :to="data.path">View</NuxtLink>
+      <NuxtLink v-if="preview" class="btn btn-primary" :to="data.path">View</NuxtLink>
     </div>
   </div>
 </template>
@@ -44,11 +44,7 @@ export default {
       type: Object,
       required: true
     },
-    showProps: {
-      type: Boolean,
-      default: true
-    },
-    showLink: {
+    preview: {
       type: Boolean,
       default: false
     }
@@ -65,7 +61,7 @@ export default {
   },
 
   head() {
-    if (this.showProps) {
+    if (!(this.preview)) {
       return {
         meta: [
           {
