@@ -11,7 +11,7 @@
       <div class="container">
         <div class="row my-1 row-cols-1 row-cols-md-3 g-4 justify-content-md-center">
 
-          <div class="col" v-for="item in data" :key="item.dir">
+          <div class="col" v-for="item in data" :key="item.path">
             <InfoCard :data="item" :showProps="false" :showLink="true" class="mb-3"></InfoCard>
           </div>
 
