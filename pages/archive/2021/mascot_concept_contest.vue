@@ -99,3 +99,16 @@
     </section>
   </main>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: 'Mascot Concept Competiton - 2021' },
+        { hid: 'og:description', property: 'og:description', content: 'The results of the Mascot Concept Competiton' },
+      ]
+    };
+  }
+}
+</script>

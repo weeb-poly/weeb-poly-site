@@ -14,7 +14,7 @@
       </div>
     </section>
 
-    <section class="container" v-if="data.media">
+    <section id="gallery" class="container" v-if="data.media">
       <div class="row">
         <h4>Gallery</h4>
       </div>
@@ -42,7 +42,7 @@
           </figure>
           -->
           <div class="card h-100">
-            <img :src="dynamicImg(item.src)" class="card-img-top">
+            <img class="card-img-top" :src="dynamicImg(item.src)">
             <div class="card-body">
               <h5 class="card-title" v-html="item.title"></h5>
               <p class="card-text" v-html="item.text"></p>
@@ -62,19 +62,22 @@ table.card-body {
   }
 
   th, td {
-    padding: 0.25rem!important;
+    padding: 0.25rem !important;
   }
 }
 
-.card-img-top {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
+#gallery {
+  .card-img,
+  .card-img-top {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+  }
 }
 
 .fs-7 {
-  font-size: 0.75rem!important;
+  font-size: 0.75rem !important;
 }
 </style>
 

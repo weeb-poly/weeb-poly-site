@@ -3,16 +3,14 @@
     <h5 class="card-header">{{ data.title }}</h5>
     <img class="card-img-top" :src="cover">
     <div class="card-body m-2 p-0">
-      <table v-if="!preview" class="table card-text fs-7">
+      <table class="table card-text fs-7">
         <tbody>
           <tr v-for="item in data.info" :key="item.key">
-            <th scope="row">{{ item.key }}</th>
-            <td v-html="item.value"></td>
+            <th scope="row" v-html="$md.renderInline(item.key)"></th>
+            <td v-html="$md.renderInline(item.value)"></td>
           </tr>
         </tbody>
       </table>
-
-      <NuxtLink v-if="preview" class="btn btn-primary" :to="data.path">View</NuxtLink>
     </div>
   </div>
 </template>
@@ -24,7 +22,7 @@ table.card-text {
   }
 
   th, td {
-    padding: 0.25rem!important;
+    padding: 0.25rem !important;
   }
 
   &:last-child {
@@ -33,7 +31,7 @@ table.card-text {
 }
 
 .fs-7 {
-  font-size: 0.75rem!important;
+  font-size: 0.75rem !important;
 }
 </style>
 
@@ -61,32 +59,13 @@ export default {
   },
 
   head() {
-    if (!(this.preview)) {
-      return {
-        meta: [
-          {
-            hid: 'og:title',
-            property: 'og:title',
-            content: this.data.title
-          },
-          {
-            hid: 'og:description',
-            property: 'og:description',
-            content: this.data.description
-          },
-          {
-            hid: 'og:site_name',
-            property: 'og:site_name',
-            content: 'Weeb Poly'
-          },
-          {
-            hid: 'og:image',
-            property: 'og:image',
-            content: this.cover
-          },
-        ]
-      };
-    }
+    return {
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: this.data.title },
+        { hid: 'og:description', property: 'og:description', content: this.data.description },
+        { hid: 'og:image', property: 'og:image', content: this.cover },
+      ]
+    };
   },
 
   methods: {
@@ -102,5 +81,6 @@ export default {
       }
     }
   }
+
 };
 </script>

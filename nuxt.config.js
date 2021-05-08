@@ -18,7 +18,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'in waifui confidimus' },
+
+      { hid: 'og:title', property: 'og:title', content: 'Weeb Poly' },
+      { hid: 'og:description', property: 'og:description', content: 'in waifui confidimus' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Weeb Poly' },
     ],
 
     link: [
@@ -60,18 +64,9 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
+    '@nuxtjs/markdownit',
     '@nuxtjs/style-resources'
   ],
-
-  hooks: {
-    'content:file:beforeInsert': async (document, database) => {
-      if (document.extension === '.json' && document.body) {
-        console.log(document);
-        const data = await database.markdown.toJSON(document.body);
-        Object.assign(document, data);
-      }
-    }
-  },
 
   googleFonts: {
     families: {

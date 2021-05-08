@@ -5,7 +5,7 @@ info:
   - key: "Full Name"
     value: "Shion (初音) Iris Smithee"
   - key: "Gender"
-    value: "<i>Left as an exercise to the reader</i>"
+    value: "*Left as an exercise to the reader*"
   - key: "Birthday"
     value: "Oct 19"
   - key: "Age"

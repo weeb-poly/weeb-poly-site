@@ -12,7 +12,7 @@
               Chiyoda City, Tokyo 101-0021<br>
               Japan<br><br>
               <strong>Phone:</strong> +81 3-3252-6166 +81<br>
-              <strong>Email:</strong> 42+notaweeb@weebpoly.ml
+              <strong>Email:</strong> 42+notaweeb@wpi.moe
             </p>
           </div>
 

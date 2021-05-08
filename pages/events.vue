@@ -18,3 +18,16 @@
     </section>
   </main>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: 'Events' },
+        { hid: 'og:description', property: 'og:description', content: 'An up-to-date calendar of our events' },
+      ]
+    };
+  }
+}
+</script>

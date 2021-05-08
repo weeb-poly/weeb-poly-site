@@ -19,7 +19,7 @@ info:
   - key: "Height"
     value: "160 cm"
   - key: "Weight"
-    value: "<i>Unknown</i>"
+    value: "*Unknown*"
   - key: "Creator"
     value: "Bowserinator"
 media:
