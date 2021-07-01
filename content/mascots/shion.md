@@ -1,6 +1,6 @@
 ---
 title: Shion
-cover: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/shion/server_icon.png"
+cover: "https://cdn.wpi.moe/mascots/shion/server_icon.png"
 info:
   - key: "Full Name"
     value: "Shion (初音) Iris Smithee"
@@ -27,15 +27,15 @@ info:
   - key: "Creator"
     value: "Cy (Bells)"
 media:
-  - src: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/shion/server_icon.png"
+  - src: "https://cdn.wpi.moe/mascots/shion/server_icon.png"
     title: "Current Server Icon"
     text: "May be replaced as part of the new competition"
-  - src: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/shion/picrew_407340.png"
+  - src: "https://cdn.wpi.moe/mascots/shion/picrew_407340.png"
     title: "Initial Design (Picrew)"
     text: "Made using Picrew #407340"
-  - src: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/shion/final_alpha.png"
+  - src: "https://cdn.wpi.moe/mascots/shion/final_alpha.png"
     title: "Contest Design (Transparent)"
-  - src: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/shion/final_gradient.png"
+  - src: "https://cdn.wpi.moe/mascots/shion/final_gradient.png"
     title: "Contest Design (Gradient)"
 ---
 

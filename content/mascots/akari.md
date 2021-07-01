@@ -1,6 +1,6 @@
 ---
 title: Akari
-cover: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/akari/cover.png"
+cover: "https://cdn.wpi.moe/mascots/akari/cover.png"
 info:
   - key: "Full Name"
     value: "*Unknown*"
@@ -23,11 +23,11 @@ info:
   - key: "Creator"
     value: "Bells"
 media:
-  - src: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/akari/draft.png"
+  - src: "https://cdn.wpi.moe/mascots/akari/draft.png"
     title: "Initial Draft"
-  - src: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/akari/red.png"
+  - src: "https://cdn.wpi.moe/mascots/akari/red.png"
     title: "Contest Design #1"
-  - src: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/akari/demongirl.png"
+  - src: "https://cdn.wpi.moe/mascots/akari/demongirl.png"
     title: "Contest Design #2"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Fukaya
-cover: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/fukaya/cover.png"
+cover: "https://cdn.wpi.moe/mascots/fukaya/cover.png"
 info:
   - key: "Full Name"
     value: "Fukaya Kaminari"
@@ -23,7 +23,7 @@ info:
   - key: "Creator"
     value: "Bowserinator"
 media:
-  - src: "https://f000.backblazeb2.com/file/cdn-wpi/mascots/fukaya/contest.png"
+  - src: "https://cdn.wpi.moe/mascots/fukaya/contest.png"
     title: "Contest Design"
 ---
 
