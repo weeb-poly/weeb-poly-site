@@ -22,7 +22,7 @@
               <li class="d-flex align-items-center"><NuxtLink to="/">Home</NuxtLink></li>
               <li class="d-flex align-items-center"><NuxtLink to="/about">About</NuxtLink></li>
               <li class="d-flex align-items-center"><NuxtLink to="/events">Events</NuxtLink></li>
-              <li class="d-flex align-items-center"><NuxtLink to="/mascots">Mascots</NuxtLink></li>
+              <li class="d-flex align-items-center"><a href="https://wiki.wpi.moe/mascots">Mascots</a></li>
             </ul>
           </div>
 
